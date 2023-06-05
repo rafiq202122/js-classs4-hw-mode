@@ -1,0 +1,172 @@
+
+:root{
+
+   --bgColor:white;
+   --textColor:black;
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background-color: var(--bgColor);
+}
+.darkmode{
+    --bgColor: #000000e9;
+    --textColor: white;
+    transition: 0.3s;
+
+
+}
+
+ul, ol {
+    list-style: none;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+/*
+nav {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+}
+
+nav button {
+    border: none;
+    outline: none;
+    padding: 15px 23px;
+    font-size: 25px;
+    color: #000;
+    cursor: pointer;
+}
+
+aside {                                           
+    width: 250px;
+    height: 100vh;
+    background-color: #ffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.24);
+    padding: 20px;
+    text-align: center;
+    font-family: arial;
+    transform: translateX(-100%);
+    transition: 0.3s;
+
+
+
+}
+ aside.active {
+
+    transform: translateX(0%);
+ }
+
+ aside a {
+    color: #000;
+    display: block;
+    margin-bottom: 15px;
+
+
+ }
+
+
+
+
+ password project starts
+ */
+
+ section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+
+ /*
+
+ .form-control {
+    position: relative;
+
+ }
+
+ input {
+    width: 350px;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 0 15px;
+ }
+
+ button {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    cursor: pointer;
+
+ }
+ */
+
+
+/*dark mode project starts */
+
+h2{
+    font-family: arial;
+    font-size: 70px;
+    color: var(--textColor);
+}
+button{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(217, 255, 0);
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 20px;
+    line-height: 40px;
+    overflow: hidden;
+    border: none;
+
+}
+
+button span {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: none;
+}
+ button .sun{
+    background-color: #ffff00 ;
+    color: #000;
+    transition: 0.3s;
+ }
+ button .moon{
+    background-color: #000000e9;
+    color: white;
+ }
+ button:hover .sun{
+    margin-top: -40px;
+ }
